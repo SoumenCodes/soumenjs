@@ -1,4 +1,4 @@
-﻿"use client";
+"use client";
 
 import { useState, useEffect } from "react";
 import { motion } from "framer-motion";
@@ -14,16 +14,6 @@ const PHRASES = [
     line2: "WORTH",
     line3: "REMEMBERING.",
   },
-  // {
-  //   line1: "IDEAS.",
-  //   line2: "TRANSFORMED INTO",
-  //   line3: "PRODUCTION CODE.",
-  // },
-  // {
-  //   line1: "SYSTEMS.",
-  //   line2: "ENGINEERED FOR",
-  //   line3: "MAXIMUM IMPACT.",
-  // },
 ];
 
 export default function TypewriterHero() {
@@ -53,7 +43,7 @@ export default function TypewriterHero() {
           setTimeout(() => {
             setIsPaused(false);
             setIsDeleting(true);
-          }, 2800);
+          }, 6800);
         }
       } else {
         if (charIndex > 0) {

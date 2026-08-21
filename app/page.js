@@ -4,7 +4,7 @@ import { useMemo, useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import Navbar from "@/components/Navbar";
 import Card from "@/components/Card";
-import Typewriter from "@/components/Typewriter";
+import TypewriterHero from "@/components/TypewriterHero";
 import { useCards } from "@/lib/cards-context";
 
 export default function Home() {
@@ -101,32 +101,7 @@ export default function Home() {
             </div>
           </motion.div>
 
-          <div className="flex flex-col select-none min-h-[170px] sm:min-h-[220px] md:min-h-[270px] lg:min-h-[320px] justify-start">
-            <motion.h1
-              initial={{ opacity: 0, y: 20 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.5, delay: 0.1 }}
-              className="text-5xl sm:text-6xl md:text-7xl lg:text-8xl font-black leading-[0.92] tracking-tighter max-w-5xl"
-            >
-              <Typewriter>
-                {`PROJECTS.
-                *BUILT TO SOLVE*
-                REAL PROBLEMS.
-                ---
-                PLACES
-                *WORTH*
-                REMEMBERING.
-                ---
-                IDEAS.
-                *TRANSFORMED INTO*
-                PRODUCTION CODE.
-                ---
-                SYSTEMS.
-                *ENGINEERED FOR*
-                MAXIMUM IMPACT.`}
-              </Typewriter>
-            </motion.h1>
-          </div>
+          <TypewriterHero />
 
           <motion.p
             initial={{ opacity: 0, y: 16 }}
