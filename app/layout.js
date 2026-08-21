@@ -2,9 +2,9 @@ import "./globals.css";
 import { CardsProvider } from "@/lib/cards-context";
 
 export const metadata = {
-  title: "Wanderlist — A Collection of Places",
+  title: "BuiltBySoumen — Personal Project Showcase Platform",
   description:
-    "A curated collection of places worth remembering.",
+    "Explore full-stack applications, developer tooling, and AI platforms built by Soumen. View architecture breakdowns, live deployments, and source repositories.",
 };
 
 export default function RootLayout({ children }) {
